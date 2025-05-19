@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    color: white;
+}
+
+body {
+    background-image: url('./Assetes/background.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #151618;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    background-color: #adaeae;
+    width: 60%;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgb(72, 72, 72);
+    font-size: 25px;
+    background-image: url('./Assetes/search-01-Stroke-Rounded\ \(1\).png');
+    background-position: 14px 8px;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+input:hover {
+    border: 1px solid gray;
+    box-shadow: inset 0px 0px 9px 0px gray;
+}
+
+.btn {
+    padding: 8px 25px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    color: black;
+    margin-right: 100px;
+}
+
+.main {
+    position: relative;
+    height: 98%;
+    width: 98%;
+    margin: 5px auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.hero {
+    width: 708px;
+    height: 27px;
+    display: block;
+    margin: 20vh auto;
+
+}
+
+h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+h2,
+p,
+audio {
+    margin-bottom: 7px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.realSong {
+    width: 46%;
+    display: flex;
+    align-self: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0 0 5px 10px;
+    padding: 20px;
+}
+
+.sideSong {
+    margin-left: 20px;
+}
+
+.audio {
+    margin-top: 10px;
+}
+
+.enjoy {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width : 1490px) {
+    .realSong {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .btn {
+
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    input {
+        padding-left: 44px;
+        font-size: 14px;
+    }
+
+    .main {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .realSong {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .audio {
+        width: 205px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .hero {
+        width: 308px;
+        height: 27px;
+        display: block;
+        margin: 20vh auto;
+    }
+
+}
+
+@media screen and (max-width : 400px) {
+    .audio {
+        width: 150px;
+    }
+
+    .realSong {
+        padding: 8px;
+    }
+
+    .main{
+        padding: 0;
+    }
+    .sideSong {
+        margin-left: 10px;
+    }
+}
